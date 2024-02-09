@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    $title_detail = [
+        'class_number' => 113,
+        'title_color' => 'text-primary',
+        'logo' => 'https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/681/original/Pittogramma-RGB-1080-BLUE-circle.png'
+    ];
+    return view('homepage', $title_detail);
 });

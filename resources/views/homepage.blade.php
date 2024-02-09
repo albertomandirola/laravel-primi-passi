@@ -13,8 +13,16 @@
 <body>
     <div class="container">
         <div class="row">
+
             <div class="col-12">
-                <h1 class="text-center text-primary">Hello Word</h1>
+                <div class="content d-flex justify-content-center align-items-center">
+                    <div class="img-container p-2">
+                        <img style="width:50px;" src="{{ $logo }}" alt="">
+                    </div>
+                    <h1 class="{{ $title_color }}">
+                        Hello Class {{ $class_number }}
+                    </h1>
+                </div>
             </div>
         </div>
     </div>
